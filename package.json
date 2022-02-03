@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "node-sass -w src/resources/scss/ -o src/public/css/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -22,10 +24,19 @@
     "url": "https://github.com/hoangvunguyen01/Company-Management-ExpressJS/issues"
   },
   "homepage": "https://github.com/hoangvunguyen01/Company-Management-ExpressJS#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --tab-width 4 --write"
+  },
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.3",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
   }
 }
