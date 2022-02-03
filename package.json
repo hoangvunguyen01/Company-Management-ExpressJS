@@ -1,0 +1,31 @@
+{
+  "name": "company",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangvunguyen01/Company-Management-ExpressJS.git"
+  },
+  "keywords": [
+    "ExpressJS",
+    "company",
+    "manage"
+  ],
+  "author": "TieuVu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoangvunguyen01/Company-Management-ExpressJS/issues"
+  },
+  "homepage": "https://github.com/hoangvunguyen01/Company-Management-ExpressJS#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
